@@ -73,8 +73,9 @@ defmodule Quantum.Mixfile do
 
   defp deps do
     [
-      {:tzdata, "~> 1.0", override: true},
+      {:tzdata, "~> 1.0"},
       {:crontab, "~> 1.1"},
+      {:hackney, "~> 1.15.2"},
       {:gen_stage, "~> 0.14"},
       {:earmark, "~> 1.0", only: [:dev, :docs], runtime: false},
       {:ex_doc, "~> 0.19", only: [:dev, :docs], runtime: false},
